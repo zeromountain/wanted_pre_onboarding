@@ -1,6 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
-
 import Toggle from './components/Toggle';
 import Modal from './components/Modal';
 import Tab from './components/Tab';
