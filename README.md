@@ -19,6 +19,23 @@
 
 ## Components
 
+### Modal
+
+**구현**
+
+- 🤔 HOW
+
+  - `react-dom`의 `createPortal` 함수를 사용해 Modal 컴포넌트를 App 컴포넌트 바깥에서 렌더링
+    - index.html → `<div id="modal-root"></div>` 엘리먼트를 추가해 해당 엘리먼트에 Portal 컴포넌트를 렌더링
+      - 기존 `<div id="root"></div>` 엘리먼트에서 렌더링되던 App 컴포넌트의 바깥에서 렌더링 가능
+
+- ？ WHY
+  - DOM의 계층 구조에 종속되지 않고 Modal 컴포넌트를 렌더링할 수 있기 때문에
+
+**에로사항**
+
+- Modal 컴포넌트의 style을 tailwind만으로 구현해보려 했으나, 아직 사용이 미숙해 styled-components를 혼합해 style 구현
+
 ### ClickToEdit
 
 **구현**
