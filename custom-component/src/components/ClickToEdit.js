@@ -27,12 +27,12 @@ const ClickToEdit = () => {
           name='age'
           defaultValue={user.age}
           onBlur={handleInputChange}
-          className='w-32 text-center border-2 outline-none'
+          className='w-32 text-center border-2 outline-none mx-3'
         />
       </div>
       <span className='w-full text-center'>
         이름: {user.name}
-        나이: {user.age}
+        &nbsp;&nbsp; 나이: {user.age}
       </span>
     </div>
   );
