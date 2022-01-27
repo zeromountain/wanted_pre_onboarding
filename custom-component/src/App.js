@@ -10,14 +10,14 @@ import ClickToEdit from './components/ClickToEdit';
 
 function App() {
   return (
-    <>
+    <div className='mt-5 flex flex-col'>
       <Toggle />
       <Modal />
       <Tab />
       <Tag />
       <Autocomplete />
       <ClickToEdit />
-    </>
+    </div>
   );
 }
 
