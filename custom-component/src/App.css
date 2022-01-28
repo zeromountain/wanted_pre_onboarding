@@ -5,9 +5,9 @@
 @layer components {
   #toggle-switch::after {
     content: '';
-    @apply h-12 w-12 rounded-full bg-white absolute m-2 transform scale-110 transition duration-200;
+    @apply h-9 w-9 rounded-full bg-white absolute m-1.5 transform transition duration-200;
   }
   #toggle-switch:checked::after {
-    @apply transform scale-110 translate-x-16;
+    @apply transform translate-x-12;
   }
 }
