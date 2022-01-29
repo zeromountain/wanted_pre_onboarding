@@ -64,17 +64,17 @@ const Dim = styled.div`
 
 const Container = styled.div`
   max-width: 456px;
-  position: relative;
   width: 100%;
 `;
 
 const ModalBody = styled.div`
+  width: 50%;
+  position: relative;
+  margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
   background: #fff;
-  max-height: calc(100vh - 16px);
   overflow: hidden;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
