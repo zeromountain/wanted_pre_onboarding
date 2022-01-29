@@ -29,7 +29,7 @@ const Tab = () => {
           <nav
             key={index}
             className={`flex-auto cursor-pointer ${
-              isActive && 'bg-indigo-700 text-white'
+              isActive && 'bg-indigo-700 text-white transition'
             }`}
             onClick={() => handleTabsClick(index)}>
             {title}
