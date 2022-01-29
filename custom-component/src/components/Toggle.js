@@ -15,7 +15,7 @@ const Toggle = () => {
           <input
             type='checkbox'
             id='toggle-switch'
-            className='cursor-pointer h-12 w-24 rounded-full appearance-none bg-gray-500 bg-opacity-50 checked:bg-violet-800 transition duration-200 '
+            className='cursor-pointer h-12 w-24 rounded-full appearance-none bg-gray-500 bg-opacity-50 checked:bg-indigo-700 transition duration-200 '
             onClick={handleCheckboxClick}
           />
         </label>

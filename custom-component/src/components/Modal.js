@@ -14,7 +14,7 @@ const Modal = () => {
       <h2 className='font-bold'>Modal</h2>
       <button
         onClick={handleOpen}
-        className='w-max rounded-full px-5 py-2 bg-violet-800 text-white mx-auto my-auto'>
+        className='w-max rounded-full px-5 py-2 bg-indigo-700 text-white mx-auto my-auto'>
         Open Modal
       </button>
       {isOpen && (
@@ -24,8 +24,10 @@ const Modal = () => {
             <Container>
               <ModalBody>
                 <button onClick={handleClose}>x</button>
-                <div className=' text-violet-900 my-10'>
-                  <span>HELLO CODESTATES!</span>
+                <div className='my-10'>
+                  <span className='font-bold text-indigo-900'>
+                    HELLO CODESTATES!
+                  </span>
                 </div>
               </ModalBody>
             </Container>
