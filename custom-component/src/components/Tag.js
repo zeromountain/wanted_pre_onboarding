@@ -13,6 +13,7 @@ const Tag = () => {
   const removeTags = (targetIndex) => {
     setTags(tags.filter((_, index) => index !== targetIndex));
   };
+
   return (
     <div className='flex flex-col border-2 w-1/2 mx-auto rounded-lg p-2 mb-10 '>
       <h2 className='font-bold'>Tag</h2>

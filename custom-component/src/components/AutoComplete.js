@@ -14,8 +14,8 @@ const AutoComplete = () => {
         return word.match(regex);
       });
     }
-    setSuggestions(matches);
     setText(val);
+    setSuggestions(matches);
   };
 
   const addText = (suggestion) => {
