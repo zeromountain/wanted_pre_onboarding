@@ -82,6 +82,54 @@
 - `useEffect` 훅을 통해서 Tab 컴포넌트가 렌더링되고 1초 후, `tabsData`의 상태가 업데이트
 - `tabsData`의 상태가 업데이트되면, 데이터의 변화에 따라 화면에 렌더링
 
+### Tag
+
+**구현**
+
+- tags 상태를 통해서 태그를 렌더링
+- `addTags`: 태그를 추가하는 함수
+  - 엔터키를 입력받았을때만 함수 실행
+  - 빈 값을 입력받지 않았을때만 tags 상태를 업데이트
+- `removeTags`: 태그를 삭제하는 함수
+  - `tags` 각 요소의 인덱스와 타겟 인덱스 비교해 인덱스 값이 같은 요소 필터
+
+**에로사항**
+
+- [ ] 태그가 여러 개 생성되면, input 태그가 다음 행으로 밀리는 문제 해결 필요
+
+**동작 방법**
+
+<img src="https://i.ibb.co/mCYYkmh/Tag.gif">
+
+- input에 내용 입력 후, 엔터 키를 입력하면 태그 등록
+- x 버튼 클릭 → 태그 삭제
+
+### AutoComplete
+
+**구현**
+
+> `words`: 초기 단어 목록
+>
+> `text`: input을 통해 입력받은 값
+>
+> `suggestions`: 입력받은 값과 일치하는 `words` 목록
+
+- 단어 목록을 비동기적으로 로드해 `words` 초기화해 렌더링
+- `handleChange`: 값이 입력되면, 입력된 값과 유효한 단어 목록(`suggestions`)과 `text` 업데이트
+- `addText`: `suggestions` 목록의 요소를 클릭하면 해당 요소를 `text`로 업데이트하고 `suggestions` 목록 초기화
+- `removeText`: x 버튼 클릭 시, `text`와 `suggestions` 초기화
+
+**에로사항**
+
+- [ ] `suggestions` 목록 렌더링 시에, input의 위치가 위로 밀리는 문제 해결 필요
+
+**동작 방법**
+
+<img src="https://i.ibb.co/b1F7XR6/Auto-Complete.gif">
+
+- `words`의 단어에 포함되는 문자 입력하면, `suggestions` 목록 렌더링
+- x 버튼 클릭하면, `suggsetions` 목록과 input 값 초기화
+
 ### ClickToEdit
 
 **구현**
