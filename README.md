@@ -117,6 +117,9 @@
 - 단어 목록을 비동기적으로 로드해 `words` 초기화해 렌더링
 - `handleChange`: 값이 입력되면, 입력된 값과 유효한 단어 목록(`suggestions`)과 `text` 업데이트
 - `addText`: `suggestions` 목록의 요소를 클릭하면 해당 요소를 `text`로 업데이트하고 `suggestions` 목록 초기화
+- `onKeyUp`
+  - 값 입력 후 ESC 누른 경우, text와 suggestions 초기화
+  - 값 입력 후 Enter 누른 경우, input의 value를 words에 추가하고, text와 suggestions 초기화
 - `removeText`: x 버튼 클릭 시, `text`와 `suggestions` 초기화
 
 **에로사항**
