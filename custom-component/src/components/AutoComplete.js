@@ -23,6 +23,18 @@ const AutoComplete = () => {
     setSuggestions([]);
   };
 
+  const onKeyUp = (e) => {
+    if (e.key === 'Escape') {
+      setText('');
+      setSuggestions([]);
+    }
+    if (e.key === 'Enter') {
+      setWords([...words, e.target.value]);
+      setText('');
+      setSuggestions([]);
+    }
+  };
+
   const removeText = (e) => {
     if (e.target.tagName !== 'BUTTON') return;
     setText('');
@@ -39,6 +51,7 @@ const AutoComplete = () => {
       }
     };
     loadWords();
+    console.log('useEffect');
   }, []);
   return (
     <div className='flex flex-col border-2 w-1/2 h-60 mx-auto rounded-lg p-2 mb-10 '>
@@ -48,6 +61,7 @@ const AutoComplete = () => {
           type='text'
           className='w-full outline-none rounded-lg border-2 border-gray-300'
           onChange={(e) => handleChange(e.target.value)}
+          onKeyUp={(e) => onKeyUp(e)}
           value={text}
         />
         <button className='absolute right-2'>x</button>
