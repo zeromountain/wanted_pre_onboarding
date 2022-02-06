@@ -8,7 +8,7 @@ const ClickToEdit = () => {
   };
 
   return (
-    <div className='flex flex-col border-2 w-1/2 mx-auto rounded-lg p-2'>
+    <div className='flex flex-col border-2 w-1/2 mx-auto mb-10 rounded-lg p-2'>
       <h2 className='font-bold'>Click To Edit</h2>
       <div className='my-3 mx-auto'>
         <span>이름</span>
