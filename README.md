@@ -75,6 +75,8 @@
 
 **에로사항**
 
+- [ ] `fetchTabsData`로 데이터 초기화할 때, 로딩 처리 고민,,,
+
 **동작 방법**
 
 <img src="https://i.ibb.co/J2b4ccb/Tab.gif">
