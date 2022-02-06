@@ -51,7 +51,6 @@ const AutoComplete = () => {
       }
     };
     loadWords();
-    console.log('useEffect');
   }, []);
   return (
     <div className='flex flex-col border-2 w-1/2 h-60 mx-auto rounded-lg p-2 mb-10 '>
@@ -66,7 +65,7 @@ const AutoComplete = () => {
         />
         <button className='absolute right-2'>x</button>
         {suggestions.length !== 0 && (
-          <div className='rounded-lg border-2'>
+          <div className='w-full rounded-lg border-2 absolute top-7'>
             {suggestions.map((suggestion, idx) => (
               <div
                 key={idx}
