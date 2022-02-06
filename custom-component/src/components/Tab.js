@@ -17,8 +17,6 @@ const Tab = () => {
     fetchTabsData().then((data) => {
       setTabsData(data);
     });
-
-    return () => fetchTabsData();
   }, []);
 
   return (
